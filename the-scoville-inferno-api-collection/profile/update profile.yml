@@ -1,0 +1,26 @@
+info:
+  name: update profile
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{BASE_URL}}/profile"
+  headers:
+    - name: Authorization
+      value: Bearer oat_Mjg.S1RXbXVaSjNNNUZOeGxBWGI3Y3NpYTJyTHQxUVVJYXFxLUFhcDIwejI5ODI2NzUxMzk
+  body:
+    type: json
+    data: |-
+      {
+        "city": "Astana",
+        "phone": "87773233311",
+        "shippingAddress": "Kazakhstan Astana"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

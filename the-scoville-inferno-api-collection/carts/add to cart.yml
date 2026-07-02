@@ -1,0 +1,24 @@
+info:
+  name: add to cart
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/cart"
+  headers:
+    - name: Authorization
+      value: Bearer oat_MQ.NVJJMWJ6NmMtWWtoWDRMSE40bGVEcVZEWUJNNjVzYUFqNlR4NmdYSTE1MTQyOTkzODk
+  body:
+    type: json
+    data: |-
+      {
+        "productId": 57,
+        "quantity": 5
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

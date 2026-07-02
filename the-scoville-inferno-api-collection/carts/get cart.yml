@@ -1,0 +1,17 @@
+info:
+  name: get cart
+  type: http
+  seq: 1
+
+http:
+  method: get
+  url: "{{BASE_URL}}/cart"
+  headers:
+    - name: Authorization
+      value: Bearer oat_MQ.NVJJMWJ6NmMtWWtoWDRMSE40bGVEcVZEWUJNNjVzYUFqNlR4NmdYSTE1MTQyOTkzODk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

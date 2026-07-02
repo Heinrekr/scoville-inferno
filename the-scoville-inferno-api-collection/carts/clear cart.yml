@@ -1,0 +1,17 @@
+info:
+  name: clear cart
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{BASE_URL}}/cart/clear"
+  headers:
+    - name: Authorization
+      value: Bearer oat_MQ.NVJJMWJ6NmMtWWtoWDRMSE40bGVEcVZEWUJNNjVzYUFqNlR4NmdYSTE1MTQyOTkzODk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
